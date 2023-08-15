@@ -1,47 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Registeration site</title>
   </head>
   <body>
     <h1 style="text-align: center">ASPILOS FOUNDATION</h1>
-    <br />
+    <br >
     <h2>Registeration form</h2>
     <form>
+      <p>
       <label for="fullname">Full Name</label>
-      <input type="text" name="fullname" required /> <br /><br />
+      <input type="text" name="fullname" required id="fullname"> 
+      </p>
 
+      <p>
       <label for="email">Email</label>
-      <input type="email" name="email" required /><br /><br />
+      <input type="email" id="email" name="email" required >
+      </p>
 
+      <p>
       <label for="password">Password</label>
-      <input type="password" name="password" required /><br /><br />
+      <input type="password" id="password" name="password" required>
+      </p>
 
+      <p>
       <label for="password">Confirm Password</label>
-      <input type="password" name="password" id="confirm_password" required />
-      <br /><br />
+      <input type="password" name="password" id="confirm_password" required>
+      </p>
 
-      <label for="Date">Date of Birth</label>
-      <input type="date" name="Birthday" required /><br /><br />
+      <p>
+      <label for="Birthday">Date of Birth</label>
+      <input type="date" id="Birthday" name="date-of-birth" required>
+     </p>
 
-      <label for="gender">Gender</label><br />
-      <input type="radio" name="gender" value="Male" />Male <br />
-      <input type="radio" name="gender" value="female" />Female <br />
-      <input type="radio" name="gender" value="other" />Other <br /><br />
+     <p>Select Gender:</p>
+     <input type="radio" id="male" name="gender" value="Male">
+     <label for="male">Male</label> <br>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>  <br>
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other">Other</label> <br><br>
 
+      <p>
       <label for="nationality">Nationality</label>
-      <input type="text" name="nationality" /> <br /><br />
+      <input type="text" id="nationality" name="country-name" required> 
+      </p>
 
-      <label for="newsletter">Newsletter:</label><br />
+      <p>newsletter:</p>
       <input
-        type="checkbox"
-        name="newsletter"
-        value="subscribe"
-      />Subscribe<br /><br />
-
-      <input type="submit" value="submit" />
+        type="checkbox" id="newsletter"
+        name="subscription"
+        value="subscribe">
+        <label for="newsletter">Subcsribe</label> <br><br>
+    
+      <input type="submit" value="submit" >
     </form><br><br>
 
     <!-- introducing Anchor tag -->

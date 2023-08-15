@@ -1,53 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Survey Page</title>
   </head>
   <body>
     <h1 style="text-align: center">SURVEY FORM</h1>
     <p>
-      Ensure to give Acurate Answers to the Questions beloe as it is compulsory.
+      Ensure to give Acurate Answers to the Questions below as it is compulsory.
     </p>
-    <form action="">
-      <label for="question">1. Which Programming Language do you prefer?</label>
-      <br />
-      <input type="radio" name="Question" value="Java" />Java <br />
-      <input type="radio" name="Question" value="Python" />Python <br />
-      <input type="radio" name="question" value="JavaScript" />JavaScript <br />
-      <input type="radio" name="Question" value="C++" />C++ <br /><br />
+    <form>
+      <p>Which Programming language do you prefer?</p> <br>
+      <input type="radio" id="java" name="Question" value="Java">
+      <label for="java">Java</label> <br>
+      <input type="radio" name="Question" value="Python">
+      <label for="python">Python</label> <br>
+      <input type="radio" id="jscript" name="question" value="jscript">
+      <label for="jscript">Javascript</label> <br>
+      <input type="radio" id="cplus" name="Question" value="cplus">
+      <label for="cplus">C++</label> <br><br>
 
-      <label for="question">2. Which Programming languages do you know?</label>
-      <br />
-      <input type="checkbox" name="question" value="Java" />Java <br />
-      <input type="checkbox" name="question" value="Python" />Python <br />
-      <input type="checkbox" name="question" value="JavaScript" />JavaScript
-      <br />
-      <input type="checkbox" name="question" value="C++" />C++ <br />
-      <input type="checkbox" name="question" value="C#" />C# <br />
-      <input type="checkbox" name="question" value="Ruby" />Ruby <br />
-      <input type="checkbox" name="question" value="Other" />Other <br /><br />
+      <p>2. Which Programming languages do you know?</p>
+      <input type="checkbox" name="question" value="Java">
+      <label for="java">Java</label> <br>
+      <input type="checkbox" id="python" name="question" value="python">
+      <label for="python">Python</label> <br>
+      <input type="checkbox" id="javascript" name="question" value="javaScript">
+      <label for="javascript">Javascript</label> <br>
+      <input type="checkbox" id="c++" name="question" value="c++">
+      <label for="c++">C++</label>  <br>
+      <input type="checkbox" id="c#" name="question" value="c#">
+      <label for="c#">C#</label> <br>
+      <input type="checkbox" id="ruby" name="question" value="ruby">
+      <label for="ruby">Ruby</label> <br>
+      <input type="checkbox" id="other" name="question" value="Other">
+      <label for="other">Other</label> <br><br>
 
-      <label for="question">3. How did you hear about this Survey?</label><br />
-      <select name="question" id="question">
-        <option value="selected">choose</option>
+      <p>3. How did you hear about this Survey?</p> 
+        <select name="question" id="question">
+        <!-- <option value="selected">choose</option> -->
         <option>Social Media</option>
         <option>Friends</option>
         <option>Website</option>
         <option>Other</option>
       </select>
-      <br /><br />
+      <br><br>
 
-      <label for="Rating">How would you Rate your Experience so Far?</label>
-      <br />
-      <input type="radio" name="Rating" value="1" />1 <br />
-      <input type="radio" name="Rating" value="2" />2 <br />
-      <input type="radio" name="Rating" value="3" />3 <br />
-      <input type="radio" name="Rating" value="4" />4 <br />
-      <input type="radio" name="rating" value="5" />5 <br /><br />
+      <p>4.How would you Rate your Experience so Far?</p>
+      
+      <input type="radio" id="1" name="Rating" value="1">
+      <label for="1">1</label> <br>
+      <input type="radio" id="2" name="Rating" value="2">
+      <label for="2">2</label> <br>
+      <input type="radio" id="3" name="Rating" value="3">
+      <label for="3">3</label><br>
+      <input type="radio" id="4" name="Rating" value="4">
+      <label for="4">4</label> <br>
+      <input type="radio" id="5" name="rating" value="5">
+      <label for="5">5</label> <br>
 
-      <input type="submit" value="submit" />
+      <input type="submit" value="submit">
     </form> <br><br>
 
     <!-- introducing anchor tags -->
